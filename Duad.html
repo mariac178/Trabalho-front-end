@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo dos Bichos de Pelúcia</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff7f0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    padding: 40px 20px;
+    text-align: center;
+    color: #5a3e36;
+}
+
+nav {
+    background-color: #ff6f91;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: #ff6f91;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: #ff6f91;
+}
+
+footer {
+    background-color: #ff6f91;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mundo dos Bichos de Pelúcia 🧸</h1>
+    <p>Carinho, fofura e muita imaginação</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#tipos">Tipos</a>
+    <a href="#colecao">Coleção</a>
+    <a href="#cuidados">Cuidados</a>
+</nav>
+
+<section id="sobre">
+    <h2>Sobre os Bichos de Pelúcia</h2>
+    <p>
+        Os bichos de pelúcia são brinquedos macios e aconchegantes que fazem parte
+        da infância de muitas pessoas. Eles representam amizade, conforto e
+        criatividade, podendo ter formatos de animais, personagens e criaturas
+        encantadas.
+    </p>
+</section>
+
+<section id="tipos">
+    <h2>Tipos de Bichos de Pelúcia</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Ursos 🐻</h3>
+            <p>Os clássicos e mais populares, simbolizam carinho e proteção.</p>
+<img src="https://th.bing.com/th/id/OIP.c-zpPrVpScjif43vSdaySQHaHa?w=210&h=210&c=7&r=0&o=7&pid=1.7&rm=3.jpg" alt="Urso de pelúcia">
+
+        </div>
+        <div class="card">
+            <h3>Coelhos 🐰</h3>
+            <p>Delicados e fofinhos, muito procurados para presentes.</p>
+<img src="data:image/webp;base64,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" alt="Urso de pelúcia">
+
+        </div>
+        <div class="card">
+            <h3>Cachorros 🐶</h3>
+            <p>Representam lealdade e amizade verdadeira.</p>
+<img src="https://th.bing.com/th/id/OIP.siK7HgR0ciV4KBIdgKOu-gHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" width=245>
+        <div class="card">
+            <h3>Personagens ⭐</h3>
+            <p>Inspirados em filmes, desenhos e séries infantis.</p>
+        </div>
+    </div>
+</section>
+
+<section id="colecao">
+    <h2>Minha Coleção</h2>
+    <p>
+        Minha coleção reúne diferentes tamanhos, cores e estilos de pelúcias,
+        desde modelos pequenos e delicados até versões gigantes e super macias.
+        Cada peça traz uma lembrança especial e um significado único.
+    </p>
+<img src="https://th.bing.com/th/id/OIP.VigGZ9J75Jx_Rgm5azezAgHaEK?w=292&h=180&c=7&r=0&o=7&pid=1.7&rm=3" width=1000>
+
+
+</section>
+
+<section id="cuidados">
+    <h2>Cuidados com Pelúcias</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Lavagem</h3>
+            <p>Lavar com sabão neutro e secar à sombra para preservar a maciez.</p>
+        </div>
+        <div class="card">
+            <h3>Armazenamento</h3>
+            <p>Guardar em local seco e limpo para evitar poeira.</p>
+        </div>
+        <div class="card">
+            <h3>Conservação</h3>
+            <p>Evitar exposição prolongada ao sol para não desbotar.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Mundo dos Bichos de Pelúcia 🧸</p>
+</footer>
+
+</body>
+</html>
