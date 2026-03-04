@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+<head>
+<meta charset = "UTF-8">
+<title> postar lógicas </title>
+
+
+<style>
+
+body{
+	background: linear-gradient(135deg, #5A62ED, #9FA8FF);
+  	font-family: Arial;
+}
+
+.container{
+	background-color: white;
+	 width: 70%;
+	margin: 40px auto;
+	border-radius: 15px;
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+	padding: 20px;
+}  
+
+
+h1{color:  #7b0da3;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+p{
+	font-size: 18px;
+	 line-height: 1.6;
+	 color: #333;
+}
+nav{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a{
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #6accc4;
+}
+
+
+.caixa{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+fieldset{
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    background: white;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+fieldset:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.25);
+}
+
+
+footer{
+    background: #d1c0ed;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+Button{ 
+	background:#d1c0ed;
+	 transform: scale(1.03);
+   	 box-shadow: 0px 12px 30px rgba(0,0,0,0.25);
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<section id="topo">
+</section>
+
+<div class="caixa">
+	<div class="header">
+		<header>
+		<h1>  Portas lógicas </h1>
+		<p>O que são Portas Lógicas? Tipos, tabela da verdade</p>
+		</header>
+	</div>
+
+	<nav>
+		<a href = "#sobre" target ="_self">Sobre</a>
+		<a href = "#AND" target ="_self">AND</a>
+		<a href = "#NAND" target ="_self">NAND</a>
+		<a href = "#OR" target ="_self">OR</a>
+		<a href = "#NOR" target ="_self">NOR</a>	
+		<a href = "#NOT" target ="_self">NOT</a>
+		<a href = "#XOR" target ="_self">XOR</a>	
+		<a href = "#avaliação" target ="_self">avaliação</a>	
+	</nav>
+
+<div id="main">
+
+	<section id="sobre">
+		<h3>O que são Portas Lógicas?</h3>
+		<p>Portas lógicas são os blocos fundamentais da eletrônica digital, responsáveis pela realização das operações lógicas básicas que formam a base dos circuitos digitais. Elas recebem um ou mais sinais de entrada e produzem um sinal de saída, conforme uma lógica específica. As portas lógicas são essenciais em computadores, dispositivos eletrônicos e em diversas aplicações tecnológicas, pois são usadas para executar operações como soma, subtração, comparação, e outras funções lógicas necessárias para o funcionamento de sistemas digitais.
+
+Cada porta lógica tem uma função definida e pode ser representada por um símbolo específico em diagramas elétricos. As operações realizadas por essas portas são baseadas nas leis da lógica matemática, particularmente na álgebra booleana, que permite a manipulação de variáveis binárias (0 e 1).</p>
+	<p> As portas lógicas mais comuns incluem:</p>
+
+
+	<div class="caixa">
+		<img src="https://inetec.com.br/wp-content/uploads/2024/09/portas_logicas.png" alt="portas">
+	</div>
+	
+		<h3>Como funciona uma Porta Lógica?</h3>
+		<p>Para entender como funciona uma porta lógica, é essencial conhecer seus princípios básicos de operação e como ela processa os sinais de entrada para gerar uma saída.</p>
+		<p><b>Sinais de Entrada e Saída:</b> Portas lógicas operam com sinais digitais, que possuem dois estados possíveis: 0 (baixo, falso) e 1 (alto, verdadeiro). Cada porta lógica recebe um ou mais desses sinais como entrada e gera um único sinal de saída com base em sua função lógica específica.</p>
+		<p><b>Operação Interna:</b> A operação de uma porta lógica é definida por uma regra lógica fixa. Essa regra determina como a saída é gerada a partir das entradas.</p>
+		<p><b>Implementação Física:</b> As portas lógicas são implementadas fisicamente usando transistores, que atuam como interruptores eletrônicos. Em circuitos integrados (ICs), uma combinação de transistores MOSFET (Metal-Oxide-Semiconductor Field-Effect Transistors) é usada para construir cada tipo de porta lógica.</p>
+		<p><b>Tabela da Verdade:</b> Cada porta lógica pode ser descrita por uma tabela da verdade, que lista todas as combinações possíveis de entradas e a correspondente saída. </p>
+		<p><b>Uso em Circuitos Digitais:</b> As portas lógicas são usadas como blocos de construção para circuitos digitais complexos. Por exemplo, somadores binários, multiplexadores, flip-flops e outros componentes digitais são construídos a partir de combinações de portas lógicas. Esses circuitos são usados em sistemas de processamento de dados, controle de dispositivos e várias outras aplicações tecnológicas.</p>
+
+
+		<h3>O que usar para iniciar em Portas Lógicas?</h3>
+		<p>Para começar a estudar Portas Lógicas, você precisa entender 3 coisas básicas:</p>
+		<p><mark>1 - Sistema Binário (0 e 1)</mark></p>
+		<p>Portas lógicas trabalham apenas com:</p>
+		<p>0 → falso</p>
+		<p>1 → verdadeiro</p>
+		<p>Tudo na eletrônica digital funciona com esses dois valores.</p>
+
+		<p><mark>2 -Álgebra Booleana</mark></p>
+		<p>Criada por George Boole, ela é a base matemática das portas lógicas.</p>
+		<p>Ela usa operações como:</p>
+		<p>AND (E)</p>
+		<p>OR (OU)</p>
+		<p>NOT (NÃO)</p>
+		<p>Essas operações seguem regras matemáticas próprias.</p>
+
+		<p><mark> 3- Tabela Verdade</mark> </p>
+		<p>Cada porta lógica tem uma tabela da verdade, que mostra o resultado dependendo das entradas. </p>
+		<p>Exemplo da porta AND: </p>
+		<p>A		B	            Saída </p>
+		<p>0		0		0 </p>
+		<p>0		1		0 </p>
+		<p>1		0		0 </p>
+		<p>1		1		1 </p>
+
+		
+		<h3>Por que usar Logisim?</h3>
+		<p>Logisim é um programa usado para:</p>
+		<p>✅ Montar circuitos digitais</p>
+		<p>✅ Simular portas lógicas</p>
+		<p>✅ Ver o resultado em tempo real</p>
+		<p>✅ Criar projetos como somadores e registradores</p>
+		<p>Ele é ótimo para iniciantes porque:</p>
+		<p>É visual 👀</p>
+		<p>Fácil de usar</p>
+		<p>Mostra os fios mudando de cor quando o valor muda</p>
+		<p>Ajuda a entender como funciona na prática</p>
+	</section>
+
+
+	<section id="AND">
+		<h4>Porta AND (E)</h4>
+		<p>A porta AND só gera saída 1 quando todas as entradas forem 1.</p>
+		<p>Se uma das entradas for 0, a saída será 0.</p>
+		
+		<div class= "caixa">
+		<img src="data:image/png;base64,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" alt="tabelaand">
+		</div>
+	</section>
+
+
+
+	<section id="NAND">
+		<h4>Porta NAND</h4>
+		<p>É o contrário da AND.</p>
+		<p>Só gera 0 quando todas as entradas forem 1.</p>
+
+		<div class= "caixa">
+		<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVO46Uvli-q4P5THURN-pl1EYf_CKA1_sqCg&s"  alt="nand" >
+		</div>
+	</section>
+
+<section id="OR">
+		<h4>Porta OR (OU)</h4>
+		<p>A porta OR gera saída 1 quando pelo menos uma entrada for 1.</p>
+
+<div class= "caixa">
+		<img src= "data:image/png;base64,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"  alt="nand" >
+		</div>
+	</section>
+
+<section id="NOR">
+	<h4>Porta NOR</h4>
+	<p> É o contrário da OR. </p>
+	<p> Só gera 1 quando todas as entradas forem 0. </p>
+
+<div class= "caixa">
+		<img src= "
+<div class= "caixa">
+		<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL88BMltUNOrip9aBhqDDp6Zjm4MkbBVd98w&s"  alt="nor" >
+		
+		</div>
+<section id="NOT">
+	<h4>Porta NOT (NÃO)</h4>
+
+	<p>A porta NOT possui apenas uma entrada e inverte o valor recebido.</p>
+	<p>Se entrar 1, sai 0.</p>
+	<p>Se entrar 0, sai 1.</p>
+
+	<div class= "caixa">
+	<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSUt3Ps_VASlntgPEKBBG1E1jd5fqgs4QiQ&s"  alt="nor" >
+	</div>
+</section>
+
+<section id="XOR">
+	<h4>Porta XOR (OU Exclusivo)</h4>
+	<p>Gera saída 1 apenas quando as entradas forem diferentes.</p>
+	<div class= "caixa">
+	<img src="data:image/png;base64,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" alt="xnor">
+	</div>
+</section>
+
+<section id="avaliação">
+	<h2>Avaliação do site</h2>
+	<form>
+		<fieldset>
+		<legend> ⭐Avaliação </legend>
+		<label> Nome </label>
+		<Input type="text" id="name" name="nome"><br>
+		<label> Você gostou do nosso site?</label>
+		<input type="radio"name="avaliacao" value="amei">AMEI
+		<input type="radio"name="avaliacao" value="odiei"">ODIEI<br>
+		</fieldset>
+	<form>
+</section>
+<button>
+<a href="#topo">⬆ Voltar ao topo</a>
+</button>
+
+	<footer>
+ 		  <p><b>Desenvolvido por Maria Eduarda ©️ 2026</b></p>
+	</footer>
+
+	
+</body>
+
+</html>
