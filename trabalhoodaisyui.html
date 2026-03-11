@@ -12,7 +12,6 @@
 
 </head>
 
-
 <body class="bg-gradient-to-r from-blue-100 to-green-100">
 
 <div class="container mx-auto p-6">
@@ -30,12 +29,11 @@
 <li><a href="#internet">Internet</a></li>
 <li><a href="#linguagens">Linguagens</a></li>
 <li><a href="#linha-do-tempo">Linha do Tempo</a></li>
-<li><a href="#formulario">Enviar</a></li>
+<li><a href="#formulario">Formulários</a></li>
 </ul>
 </div>
 
 </div>
-
 
 <header class="text-center mb-10">
 
@@ -49,7 +47,7 @@ Uma coletânea caótica de fatos históricos curiosos e inesperados.
 
 </header>
 
-
+<!-- PIONEIROS -->
 
 <section id="pioneiros" class="mb-10">
 
@@ -81,7 +79,6 @@ Ver mais
 </div>
 </div>
 
-
 <div class="card bg-base-100 shadow-xl">
 <div class="card-body">
 
@@ -99,7 +96,6 @@ Ver mais
 </div>
 
 </section>
-
 
 <!-- BUGS -->
 
@@ -139,7 +135,7 @@ I'M THE CREEPER : CATCH ME IF YOU CAN
 
 </section>
 
-
+<!-- INTERNET -->
 
 <section id="internet" class="mb-10">
 
@@ -151,14 +147,10 @@ I'M THE CREEPER : CATCH ME IF YOU CAN
 <div class="card-body">
 
 <h3 class="card-title">Primeiro Website</h3>
-
-<p>
-Criado em 1991 por Tim Berners-Lee.
-</p>
+<p>Criado em 1991 por Tim Berners-Lee.</p>
 
 </div>
 </div>
-
 
 <div class="card bg-base-100 shadow-xl">
 <div class="card-body">
@@ -173,14 +165,13 @@ Criado em 1991 por Tim Berners-Lee.
 </div>
 </div>
 
-
 <div class="card bg-base-100 shadow-xl">
 <div class="card-body">
 
 <h3 class="card-title">Emojis antigos</h3>
 
-<code>:-)</code>  
-<code>;-)</code>  
+<code>:-)</code>
+<code>;-)</code>
 <code>:-D</code>
 
 </div>
@@ -190,7 +181,7 @@ Criado em 1991 por Tim Berners-Lee.
 
 </section>
 
-
+<!-- LINGUAGENS -->
 
 <section id="linguagens" class="mb-10">
 
@@ -208,6 +199,7 @@ Criado em 1991 por Tim Berners-Lee.
 </thead>
 
 <tbody>
+
 <tr>
 <td>COBOL</td>
 <td>1959</td>
@@ -222,6 +214,7 @@ Criado em 1991 por Tim Berners-Lee.
 <td>Python</td>
 <td>1991</td>
 </tr>
+
 </tbody>
 
 </table>
@@ -230,13 +223,13 @@ Criado em 1991 por Tim Berners-Lee.
 
 </section>
 
-
+<!-- LINHA DO TEMPO -->
 
 <section id="linha-do-tempo" class="mb-10">
 
 <h2 class="text-3xl font-bold mb-6">Linha do Tempo</h2>
 
-<ul class="timeline">
+<ul class="timeline timeline-vertical">
 
 <li>
 <div class="timeline-start">1837</div>
@@ -266,74 +259,71 @@ Criado em 1991 por Tim Berners-Lee.
 
 </section>
 
+<!-- FORMULÁRIOS -->
 
+<section id="formulario" class="mb-10 grid md:grid-cols-3 gap-6">
 
-<section id="formulario" class="mb-10 flex justify-center">
+<!-- FORM 1 -->
 
-<form class="card bg-base-100 shadow-xl p-6 w-full max-w-lg">
+<form class="card bg-base-100 shadow-xl p-6">
 
-<h2 class="text-2xl font-bold mb-4">
-Envie sua curiosidade
-</h2>
+<h2 class="text-xl font-bold mb-4">Enviar Curiosidade</h2>
 
-<label class="form-control mb-3">
+<input type="text" placeholder="Nome" class="input input-bordered mb-3">
+<input type="email" placeholder="Email" class="input input-bordered mb-3">
 
-<div class="label">
-<span class="label-text">Nome</span>
-</div>
-
-<input type="text" class="input input-bordered">
-
-</label>
-
-
-<label class="form-control mb-3">
-
-<div class="label">
-<span class="label-text">Email</span>
-</div>
-
-<input type="email" class="input input-bordered">
-
-</label>
-
-
-<label class="form-control mb-3">
-
-<div class="label">
-<span class="label-text">Categoria</span>
-</div>
-
-<select class="select select-bordered">
-
+<select class="select select-bordered mb-3">
 <option>Pioneiros</option>
 <option>Bugs</option>
 <option>Internet</option>
 <option>Linguagens</option>
-
 </select>
 
-</label>
+<textarea class="textarea textarea-bordered mb-3" placeholder="Curiosidade"></textarea>
 
+<button class="btn btn-primary">Enviar</button>
 
-<label class="form-control mb-3">
+</form>
 
-<div class="label">
-<span class="label-text">Curiosidade</span>
-</div>
+<!-- FORM 2 -->
 
-<textarea class="textarea textarea-bordered"></textarea>
+<form class="card bg-base-100 shadow-xl p-6">
 
-</label>
+<h2 class="text-xl font-bold mb-4">Fato Inútil</h2>
 
+<input type="text" placeholder="Nome" class="input input-bordered mb-3">
+<input type="text" placeholder="Fato inútil" class="input input-bordered mb-3">
 
-<button class="btn btn-primary mt-4">
-Enviar curiosidade
-</button>
+<input type="number" min="0" max="10" placeholder="Grau de inutilidade" class="input input-bordered mb-3">
+
+<button class="btn btn-secondary">Enviar</button>
+
+</form>
+
+<!-- FORM 3 -->
+
+<form class="card bg-base-100 shadow-xl p-6">
+
+<h2 class="text-xl font-bold mb-4">Bug ou Easter Egg</h2>
+
+<input type="text" placeholder="Seu nome" class="input input-bordered mb-3">
+
+<select class="select select-bordered mb-3">
+<option>Bug</option>
+<option>Easter Egg</option>
+<option>Comando estranho</option>
+</select>
+
+<textarea class="textarea textarea-bordered mb-3" placeholder="Descrição"></textarea>
+
+<input type="number" min="1" max="10" placeholder="Grau de estranheza" class="input input-bordered mb-3">
+
+<button class="btn btn-accent">Enviar</button>
 
 </form>
 
 </section>
+
 
 <div class="avatar">
   <div class="w-32 rounded">
@@ -365,10 +355,7 @@ Enviar curiosidade
   </div>
 </div>TO DE OLHO
 
-
-<footer  class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
-
-<div>
+<footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
 
 <p class="font-bold">
 Instituto Internacional de Informações Desnecessárias
@@ -381,8 +368,6 @@ Instituto Internacional de Informações Desnecessárias
 <p class="text-sm opacity-70">
 contato@computacao.com
 </p>
-
-</div>
 
 </footer>
 
